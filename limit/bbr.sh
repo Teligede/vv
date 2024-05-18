@@ -1,6 +1,6 @@
 #!/bin/bash
 # Edition : Stable Edition V3.0
-# Auther  : Julak Bantur
+# Auther  : 
 # (C) Copyright 2024
 # =========================================
 
@@ -18,7 +18,7 @@ clear
 #	 menu
 #else
 
-echo -e "Installing TCP BBR Mod By Julak Bantur"
+echo -e "Installing TCP BBR Mod By rmbl"
 echo -e "Please Wait BBR Installation Will Starting . . ."
 sleep 5
 clear

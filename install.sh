@@ -20,8 +20,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="-1002117725897"
-KEY="6123951004:AAFMeqbK8n2HEVyCnlUKlvnFgpCpt86wbaA"
+CHATID="-10021175897"
+KEY="61239004:AAFMeqbK8n2HEVyCnlUKlvnFgpCpt86wbaA"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
@@ -37,8 +37,8 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  Welcome To Julak Tunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Author : ${green}╭────────────SANAK STORE®────────────╮${NC}${YELLOW}(${NC} ${green} SANAK STORE Tunneling ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self SANAK STORE Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Author : ${green}╭────────────RMBL STORE®────────────╮${NC}${YELLOW}(${NC} ${green} SANAK STORE Tunneling ${NC}${YELLOW})${NC}"
+echo -e " © Recode By My Self RMBL VPN Tunneling${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2

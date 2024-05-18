@@ -36,7 +36,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget --no-check-certificate https://raw.githubusercontent.com/sanakstore/sanakstore/main/limit/menu.zip
+    wget --no-check-certificate https://raw.githubusercontent.com/Teligede/vv/main/limit/menu.zip
     unzip menu.zip
     chmod +x menu/*
     enc menu/*
@@ -48,7 +48,7 @@ res1() {
 netfilter-persistent
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m          UPDATE SCRIPT SANAK STORE     \e[0m"
+echo -e " \e[1;97;101m          UPDATE SCRIPT RMBL VPN    \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "  \033[1;91m update script service\033[1;37m"

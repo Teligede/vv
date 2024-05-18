@@ -98,9 +98,9 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/kuhing/ip/main/vps | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/RMBL-VPN/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/kuhing/ip/main/vps | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/RMBL-VPN/permission/main/ipmini | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
@@ -120,11 +120,11 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-# Status ExpiRED Active | SANAK STORE
+# Status ExpiRED Active | RMBL STORE
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/kuhing/ip/main/vps | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/RMBL-VPN/permission/main/ipmini | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -133,7 +133,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/sanakstore/sanakstore/main/"
+    REPO="https://raw.githubusercontent.com/Teligede/vv/main/"
 
 ####
 start=$(date +%s)
@@ -312,12 +312,12 @@ clear
 clear
 #GANTI PASSWORD DEFAULT
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/kuhing/ip/main/vps | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/kuhing/ip/main/vps | grep $ipsaya | awk '{print $3}')
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/RMBL-VPN/permission/main/ipmini | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/RMBL-VPN/permission/main/ipmini | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>⚡AUTOSCRIPT PREMIUM V3⚡</b>
+    <b>⚡AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -328,7 +328,7 @@ restart_system() {
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ORDER🐳","url":"https://t.me/Baung2012"},{"text":"GROUP🐬","url":"https://t.me/SANAKSTORE"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ORDER🐳","url":"https://t.me/dut"},{"text":"GROUP🐬","url":"https://t.me/dut"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -736,8 +736,8 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user backupsmtp93@gmail.com
-from backupsmtp93@gmail.com
+user backupmtp93@gmail.com
+from backusmtp93@gmail.com
 password sdallofkbpuhbtoa 
 logfile ~/.msmtp.log
 EOF
@@ -883,7 +883,7 @@ print_success "Restart All Service"
 function menu(){
     clear
     print_install "Install Menu Packet"
-    wget --no-check-certificate https://raw.githubusercontent.com/sanakstore/sanakstore/main/limit/menu.zip
+    wget --no-check-certificate https://raw.githubusercontent.com/Teligede/vv/main/limit/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin

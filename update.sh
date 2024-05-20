@@ -32,7 +32,6 @@ fun_bar() {
         echo -ne "  \033[0;33mPlease Wait Loading \033[1;37m- \033[0;33m["
     done
     echo -e "\033[0;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
-    echo -e "\033[32mJangan lupa ngopi\033[0m" # Menambahkan teks "Jangan lupa ngopi" dengan warna hijau
     tput cnorm
 }
 res1() {

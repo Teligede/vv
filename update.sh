@@ -47,7 +47,7 @@ fun_bar() {
 
 # Function to download, extract, and move files
 res1() {
-    wget --no-check-certificate https://rmblvpn.cloud/limit/menu.zip
+    wget --no-check-certificate https://raw.githubusercontent.com/Teligede/vv/main/limit/menu.zip
     unzip menu.zip
     chmod +x menu/*
     enc menu/*
